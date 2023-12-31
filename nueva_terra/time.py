@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-def read_time_from_file(file_path):
+def read_time_from_file(/Desktop/Nueva Terra/time.txt):
     try:
         with open(file_path, 'r') as file:
             time_data = file.readline()
@@ -19,7 +19,7 @@ def minecraft_time_to_real_time(ticks):
     return start_time + timedelta(seconds=real_time_seconds)
 
 def current():
-    time_ticks = read_time_from_file('path/to/time.txt')  # Update this with the correct path
+    time_ticks = read_time_from_file('/Desktop/Nueva Terra/time.txt')  # Update this with the correct path
     if time_ticks is not None:
         return minecraft_time_to_real_time(time_ticks)
     else:
